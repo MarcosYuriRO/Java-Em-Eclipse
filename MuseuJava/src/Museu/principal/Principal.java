@@ -24,7 +24,6 @@ public class Principal {
      
      if(visitante.getIdade() < 18) {
     	 System.out.println("Você é menor de idade, volte aqui com um responsável!");
-    	 scanner.close();
      } else {
 
      System.out.println("Bem-Vindo(a), " + visitante.getNome());
@@ -57,11 +56,9 @@ public class Principal {
              break;
          case 4: 
         	 System.out.println("Fique bem!");
-        	 scanner.close();
              break;
          default:
         	 System.out.println("Opção Inválida.");
-        	 scanner.nextLine();
      	}
      
      scanner.nextLine();
